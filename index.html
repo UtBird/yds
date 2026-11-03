@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YDS 95+ Planı</title>
+  <meta name="description" content="28 Mart 2027 YDS için 21 haftalık çalışma planı, günlük görevler, deneme takibi ve hata defteri.">
+  <meta name="theme-color" content="#f7f4ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15181d" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%23b23a26'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="site-head">
+    <div class="wrap head-row">
+      <a class="brand" href="#bugun"><span class="brand-dot" aria-hidden="true"></span>YDS 95+</a>
+      <nav aria-label="Ana menü">
+        <a href="#bugun" data-nav="bugun">Bugün</a>
+        <a href="#takvim" data-nav="takvim">Takvim</a>
+        <a href="#denemeler" data-nav="denemeler">Denemeler</a>
+        <a href="#hatalar" data-nav="hatalar">Hatalar</a>
+        <a href="#rehber" data-nav="rehber">Rehber</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+    <div id="view"></div>
+    <noscript><p class="callout">Bu sayfanın çalışması için JavaScript gerekiyor.</p></noscript>
+
+    <section id="rehber-view" hidden>
+      <p class="eyebrow">Rehber</p>
+      <h1 tabindex="-1">Planın kuralları</h1>
+      <p class="lede">Taban 75, hedef 95+. Takvimin dayandığı kurallar ve kaynak notları burada.</p>
+
+      <nav class="toc" aria-label="Rehber bölümleri">
+        <a href="#rehber/puan">Puan</a>
+        <a href="#rehber/tarihler">Tarihler</a>
+        <a href="#rehber/ilkeler">İlkeler</a>
+        <a href="#rehber/sablon">Akşam şablonu</a>
+        <a href="#rehber/kelime">Kelime</a>
+        <a href="#rehber/deneme">Deneme protokolü</a>
+        <a href="#rehber/sinav">Sınav günü</a>
+        <a href="#rehber/videolar">Yedek videolar</a>
+        <a href="#rehber/kanit">Kanıt notu</a>
+      </nav>
+
+      <section id="puan" class="doc">
+        <h2>Puan ve hedef</h2>
+        <p>Her doğru 1,25 puan. Yanlış doğruyu götürmez, bu yüzden hiçbir soruyu boş bırakma.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th scope="col">Puan</th><th scope="col" class="num">Gereken doğru</th><th scope="col" class="num">Yanlış/boş hakkı</th></tr></thead>
+          <tbody>
+            <tr><td>60</td><td class="num">48</td><td class="num">32</td></tr>
+            <tr><td>70</td><td class="num">56</td><td class="num">24</td></tr>
+            <tr class="hl"><td>75 (taban)</td><td class="num">60</td><td class="num">20</td></tr>
+            <tr><td>80</td><td class="num">64</td><td class="num">16</td></tr>
+            <tr><td>85</td><td class="num">68</td><td class="num">12</td></tr>
+            <tr><td>90</td><td class="num">72</td><td class="num">8</td></tr>
+            <tr><td>92,5</td><td class="num">74</td><td class="num">6</td></tr>
+            <tr class="hl"><td>95 (hedef)</td><td class="num">76</td><td class="num">4</td></tr>
+          </tbody>
+        </table></div>
+        <p>95+ demek 80 soruda en fazla 4 yanlış demektir. Bu seviyede çeviri (6 soru) ve paragraflar (yaklaşık 20 soru) neredeyse hatasız gitmeli. Plan 95'i garanti etmez. 75 tabanını koruyup 95'e en yüksek şansı verecek şekilde kurgulandı.</p>
+      </section>
+
+      <section id="tarihler" class="doc">
+        <h2>Önemli tarihler</h2>
+        <p>ÖSYM 2027 takvimine göre derlendi. Kayıt öncesi <a href="https://www.osym.gov.tr" target="_blank" rel="noopener">osym.gov.tr</a> üzerinden tekrar doğrula.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th scope="col">Olay</th><th scope="col">Tarih</th></tr></thead>
+          <tbody>
+            <tr><td>2027-YDS/1 kayıt</td><td>3–11 Şubat 2027 (Çarşamba–Perşembe)</td></tr>
+            <tr><td>2027-YDS/1 geç kayıt</td><td>18 Şubat 2027 (Perşembe)</td></tr>
+            <tr class="hl"><td>2027-YDS/1 sınav</td><td>28 Mart 2027 Pazar, 10:15</td></tr>
+            <tr><td>2027-YDS/1 sonuç</td><td>21 Nisan 2027 (Çarşamba)</td></tr>
+            <tr><td>Yedek: e-YDS (Cumartesi 13:45, sonuç aynı gün, kontenjanlı)</td><td>16 Ocak (kayıt 4–7 Ocak), 6 Şubat (kayıt 20–28 Ocak), 24 Nisan (kayıt 7–14 Nisan)</td></tr>
+            <tr><td>Yedek: 2027-YDS/2</td><td>21 Kasım 2027 (kayıt 5–13 Ekim)</td></tr>
+          </tbody>
+        </table></div>
+        <ul>
+          <li>Harç: 2026'da YDS 1.200 TL, e-YDS 2.150 TL'ydi. 2027 harcı henüz açıklanmadı.</li>
+          <li>Kayıt günü: 3 Şubat Çarşamba akşamı kayıt ol. Son güne bırakma.</li>
+          <li>YDS/1 sonucu 21 Nisan'da çıkıyor, 24 Nisan e-YDS'nin kaydı ise 7–14 Nisan'da kapanıyor. O e-YDS'ye girip girmeyeceğine sonucu görmeden karar vermen gerekir.</li>
+        </ul>
+      </section>
+
+      <section id="ilkeler" class="doc">
+        <h2>Çalışma düzeninin ilkeleri</h2>
+        <ol>
+          <li><strong>Kelime ve edat erken başlar.</strong> Kelime kitabı 9 Kasım'da başlar. Edat ve phrasal verb haftada 2 gün kelime bloğuna eklenir.</li>
+          <li><strong>Okuma 1. haftadan itibaren her gün.</strong> Farklı alanlardan makale oku, bilinmeyen kelimeleri deftere yaz.</li>
+          <li><strong>Gramer sıkıştırıldı.</strong> H2–H8'de biter, H9 çıkmış gramer sorularına ayrıldı.</li>
+          <li><strong>Tam denemeler 17 Ocak'ta başlar.</strong> Toplam 10 tam deneme, 1 tanı, 2 yarım deneme.</li>
+          <li><strong>Çıkmış sorular ikinci tur.</strong> Her denemenin yanlışlarını 2 hafta sonra yeniden çöz.</li>
+          <li><strong>Çıkmış sınavları böl.</strong> En yeni 8–10 sınavı tam deneme için sakla. Eski sınavları soru tipine göre alıştırma için kullan. ÖSYM, her sınavdan sonra soru kitapçıklarını ücretsiz yayımlıyor.</li>
+          <li><strong>Hata defteri her gün.</strong> Hata türüne göre çalışmayı yönlendir.</li>
+          <li><strong>Süre.</strong> Hafta içi 20:00–22:30, Cumartesi 2,5 saat, Pazar deneme. Haftada yaklaşık 18 saat. 2 saatle de yürür ama 95 için tampon azalır.</li>
+        </ol>
+      </section>
+
+      <section id="sablon" class="doc">
+        <h2>Akşam şablonu ve haftalık ritim</h2>
+        <div class="table-wrap"><table>
+          <thead><tr><th scope="col">Saat</th><th scope="col">Blok</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">20:00–20:30</td><td>Kelime: 20 yeni kelime + 1-3-7. gün tekrar listeleri</td></tr>
+            <tr><td class="mono">20:30–21:10</td><td>Konu: video (20–25 dk) + kitaptaki ilgili bölüm</td></tr>
+            <tr><td class="mono">21:10–21:45</td><td>Konu soruları: süre tutarak çöz</td></tr>
+            <tr><td class="mono">21:45–22:15</td><td>Okuma: makale veya paragraf, bilinmeyen kelimeler deftere</td></tr>
+            <tr><td class="mono">22:15–22:30</td><td>Hata defteri</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>2 saat kaldıysa:</strong> Okumayı 15 dk'ya, soru çözümünü 25 dk'ya indir. Kelime ve hata defterini kısaltma.</p>
+        <ul class="week-list">
+          <li><b>Pazartesi</b> Konu A videosu + kitap + soru</li>
+          <li><b>Salı</b> Konu A soruları (30–40)</li>
+          <li><b>Çarşamba</b> Paragraf günü: 75 dk süreli set + analiz</li>
+          <li><b>Perşembe</b> Konu B videosu + kitap + soru</li>
+          <li><b>Cuma</b> Konu B soruları (30–40) + 2 paragraf</li>
+          <li><b>Cumartesi</b> Haftalık kelime testi, hata defteri tekrarı, 10 çeviri sorusu</li>
+          <li><b>Pazar</b> Dinlen, belirli tarihlerde deneme</li>
+        </ul>
+      </section>
+
+      <section id="kelime" class="doc">
+        <h2>Kelime sistemi</h2>
+        <ul>
+          <li>Kitap: Modadil "60 Günde Ezberbozan Kelimeler". Hedef 1080 kelime, günde 20 kelime, Pazartesi–Cumartesi.</li>
+          <li>Gün 1 = 9 Kasım Pazartesi. Gün 60 = 16 Ocak Cumartesi.</li>
+          <li>Kitabın 55–60. günlerinin (phrasal verb, edat, tekrar, kelime testleri) kendi baskında aynı olduğunu içindekiler sayfasından kontrol et. Bu içerik benzer bir Modadil baskısından tahmin edildi.</li>
+          <li>Kitap kelimeyi eş anlam ve örnek cümleyle veriyor. Eş anlamları da öğren.</li>
+          <li><strong>1-3-7 tekrar:</strong> N. günün listesini N+1, N+3 ve N+7'de tekrarla. Her gün yaklaşık 80 kelimeye bakarsın. Bu site günleri Pazartesi–Cumartesi çalışma günü olarak sayar.</li>
+          <li>Edat ve phrasal verb: Salı ve Perşembe kelime bloğuna 10 dk ekle. Bilinmeyenleri ayrı sayfada tut.</li>
+          <li>Kitap bittikten sonra (17 Ocak'tan itibaren): günde 10 yeni kelime, kaynak okuma ve deneme hataları. Bir forum kullanıcısı Pelikan'ın "Essential Academic Vocabulary" kitabını önermiş (2018). Güncel durumunu kendin kontrol et.</li>
+        </ul>
+      </section>
+
+      <section id="deneme" class="doc">
+        <h2>Deneme protokolü</h2>
+        <ol>
+          <li><strong>Zamanlama:</strong> 180 dk, kesintisiz, telefon kapalı. Pazar gündüz müsaitsen 10:15'te çöz. Özellikle son 4 deneme gerçek sınav saatinde olmalı. Müsait değilsen 20:00–23:00.</li>
+          <li><strong>Cevap kağıdı:</strong> Gerçek sınav gibi işaretle.</li>
+          <li><strong>Boş bırakma:</strong> Tüm soruları işaretle.</li>
+          <li><strong>Analiz (en geç ertesi akşam, 60–90 dk):</strong> Soru tipine göre doğru/yanlış say. Her yanlışın nedenini yaz: kelime, gramer, mantık, süre, dikkat. Şansla doğru yaptıklarını da yanlış say.</li>
+          <li><strong>İkinci tur:</strong> 2 hafta sonra yanlış ve şüpheli soruları yeniden çöz.</li>
+          <li><strong>Kayıt:</strong> Her denemenin toplamını ve soru tipi dağılımını Denemeler sayfasına yaz.</li>
+        </ol>
+      </section>
+
+      <section id="sinav" class="doc">
+        <h2>Sınav günü stratejisi</h2>
+        <ul>
+          <li>80 soru, 180 dakika: ortalama 2,25 dk/soru.</li>
+          <li>Başlangıç önerisi, denemelerinde kalibre et: ilk 26 soru (kelime ve gramer) yaklaşık 30 dk, kalan 54 soru yaklaşık 140 dk, son 10 dk kontrol ve boş kalanları işaretleme.</li>
+          <li>Takıldığın soruyu işaretle, geç, sonra dön.</li>
+          <li>Bütün soruları işaretle. Yanlış doğruyu götürmez.</li>
+          <li>Sınav giriş belgesindeki ve ÖSYM kılavuzundaki kuralları (kimlik, kalem vb.) önceden kontrol et.</li>
+        </ul>
+      </section>
+
+      <section id="videolar" class="doc">
+        <h2>Yedek video listesi</h2>
+        <p>Takvimde geçmeyen ek linkler.</p>
+        <div id="extra-videos"></div>
+      </section>
+
+      <section id="kanit" class="doc">
+        <h2>Kanıt notu</h2>
+        <p><strong>Kilometre taşları ve süreler forum verisi değil, tahmindir.</strong> Tanı denemene göre kaydır.</p>
+        <h3>Forumlardan çıkanlar</h3>
+        <p>Kanıt zayıf. Okunan üç DonanımHaber başlığı 2018–2020 tarihli ve hiçbirinde yöntemini anlatan doğrulanmış bir 90+ sahibi yok.</p>
+        <ul>
+          <li><strong>Gramer ve okuma (2018):</strong> İleri düzey gramer, okumaya ciddi zaman, çok çıkan edat, bağlaç, deyimsel fiil, sıfat ve zarfa ayrı çalışma. 5.000–6.000 kelime ve birden çok alandan okuma.</li>
+          <li><strong>Çıkmış sorular (2018):</strong> Belli seviyeden sonra ÖSYM mantığı gerekir, çıkmışları 2–3 kez çözmek soru algısını geliştirir.</li>
+          <li><strong>Günlük rutin (2018–2019):</strong> Çıkmış sorular, özgün denemeler, makale ve makaleden kelime çalışması. "Tamamen taktikle bu iş olmuyor." 3 aylık çalışmayla ilk girişimde 63,75.</li>
+          <li><strong>Okuma alışkanlığı (2019):</strong> 300–400 sayfalık bir roman bitirmek, yabancı dizi ve film izlemek.</li>
+          <li><strong>90+ hedefleyen biri (2020):</strong> Yaklaşık 50 deneme, deneme puanları 85–90, en zayıf nokta ilk 26 soru. Bu kişi 90+ almış değil, hedefliyor.</li>
+          <li><strong>Eksik olan:</strong> Günlük süre, deneme sayısı ve süre yönetimi için somut veri yok. Ekşi Sözlük bot engeli yüzünden okunamadı.</li>
+        </ul>
+        <h3>Linkler</h3>
+        <ul>
+          <li>Linkler tek tek açılıp doğrulanamadı. Başlıklar arama sonuçlarında görüldü, süre ve kanal bilgisi görülmedi. Yanlış video açılırsa başlığı kanalda arat.</li>
+          <li>Forumlarda net bir "şu hoca" konsensüsü yok. Mesut Koyuncu DonanımHaber'de iki yerde geçiyor. Hüseyin Demirtaş'ın kitapları DonanımHaber'de anılmış, Webtekno'daki bir yazıda önerilmiş. Hakkı Hoca için forum önerisi bulunamadı, popülerliği YouTube'da görüldü. Öneriler çoğunlukla ücretli kurslar (Remzi Hoca, Akın Dil) üzerine ve 2014–2021 tarihli.</li>
+          <li>Numaralı gramer serisinin (01, 04, 17, 18, 19, 21, 22, 25) sahibi doğrulanamadı. Hem Hakkı Hoca hem Hüseyin Demirtaş aramalarında çıktı.</li>
+          <li>"Sınav Stratejileri 1–2"nin içeriği doğrulanamadı. Gramer anlatımı mı, soru tipi kitabı mı olduğunu içindekiler sayfasından kontrol et.</li>
+        </ul>
+        <h3>Kaynaklar</h3>
+        <ul>
+          <li><a href="https://forum.donanimhaber.com/yds-90-puan-almak-icin-onerileriniz-nedir--131250439" target="_blank" rel="noopener">DonanımHaber: YDS 90+ puan almak için önerileriniz nedir</a></li>
+          <li><a href="https://forum.donanimhaber.com/yds-den-90-icin-onerileriniz-nedir--131391436" target="_blank" rel="noopener">DonanımHaber: YDS'den 90+ için önerileriniz nedir</a></li>
+          <li><a href="https://forum.donanimhaber.com/90-eylul-yds--143043040" target="_blank" rel="noopener">DonanımHaber: 90+ Eylül YDS</a></li>
+          <li><a href="https://forum.donanimhaber.com/yds-ve-dil-gelistirmek-icin-muhtesem-otesi-kaynak-kacirmayin--129144976" target="_blank" rel="noopener">DonanımHaber: YDS ve dil geliştirmek için muhteşem ötesi kaynak</a></li>
+          <li><a href="https://forum.donanimhaber.com/yds-ye-hazirlanmaya-baslayacagim-tavsiye-verebilir-misiniz--142569709" target="_blank" rel="noopener">DonanımHaber: YDS'ye hazırlanmaya başlayacağım</a></li>
+          <li><a href="https://www.osym.gov.tr" target="_blank" rel="noopener">ÖSYM</a></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-row">
+      <p>İlerlemen yalnızca bu tarayıcıda saklanır. Tarayıcı verisi silinirse kaybolur, başka cihaza geçmez.</p>
+      <div class="foot-actions">
+        <button type="button" class="btn" id="export-btn">Yedek indir</button>
+        <label class="btn" for="import-input">Yedek yükle</label>
+        <input type="file" id="import-input" class="sr-only" accept="application/json,.json">
+      </div>
+      <p id="backup-status" role="status" class="foot-status"></p>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/plan.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
